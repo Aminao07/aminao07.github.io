@@ -1,0 +1,97 @@
+body {
+    background-color: #000000; /* Zwarte achtergrondkleur */
+    font-family: 'Roboto', Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.game-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #1c1c1c; /* Donkergrijze achtergrondkleur voor de container */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    text-align: center; /* Alles centreren */
+}
+
+.game-container:hover {
+    transform: scale(1.03);
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #e60000; /* Rode kleur voor de titel */
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.card {
+    display: inline-block;
+    width: 100px;
+    height: 150px;
+    margin: 20px;
+    background-color: #1c1c1c; /* Donkergrijze achtergrondkleur voor de kaarten */
+    border: 3px solid #e60000; /* Rode randkleur */
+    font-size: 60px;
+    line-height: 150px;
+    color: #e60000; /* Rode tekstkleur */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.card:hover {
+    transform: rotate(-5deg);
+    background-color: #333333; /* Donkerder grijze achtergrondkleur bij hover */
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #e60000; /* Rode achtergrondkleur voor de knoppen */
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    color: white;
+    margin: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #cc0000; /* Donkerdere rode kleur bij hover */
+    transform: translateY(-3px);
+}
+
+button:active {
+    background-color: #990000; /* Nog donkerdere rode kleur bij klikken */
+    transform: translateY(1px);
+}
+
+.message {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #e60000; /* Rode kleur voor berichten */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.message.show {
+    opacity: 1;
+}
+
+.score {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #e60000; /* Rode kleur voor de score */
+}

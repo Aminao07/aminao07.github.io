@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Amina Ozdojeva</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        :root {
+            --blue: #003366;
+            --white: white;
+            --red: #ff0000;
+            --dark: rgba(0, 0, 0, 0.5);
+            --blue-ish: #095199;
+            --light-gray: lightgray;
+            --bg-about: rgba(115, 18, 18, 0.62);
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--white);
+            overflow-x: hidden;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: var(--blue);
+            padding: 10px 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            box-sizing: border-box;
+        }
+
+        .logo-img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .logo-img:hover {
+            transform: rotate(360deg);
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: space-around;
+            flex-grow: 1;
+        }
+
+        .nav-links a {
+            color: var(--white);
+            text-decoration: none;
+            font-size: 18px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 8px 16px;
+            border-radius: 4px;
+            transition: all 0.6s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--red);
+            background-color: var(--blue-ish);
+            transform: translateY(-4px);
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <img id="logo" class="logo-img" src="img/AminaOzdojeva.logo.webp" alt="Logo">
+        <div class="nav-links">
+            <a href="../index.html#home">Home</a>
+            <a href="../index.html#about">Over mij</a>
+            <a href="../index.html#projects">Projecten</a>
+            <a href="../index.html#contact">Contact</a>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Portfolio van Amina Ozdojeva </h1>
+    </header>
+    <img src="img/ninja.jpg" alt="" style="width: 550px; height: 450;">
+    <div class="container">
+        <h2>Motivatie</h2>
+        <p>
+            Ik ben Amina. Ik vind technologie leuk. Daarom kies ik de opleiding Software Developer.
+            Op school leerde ik over computers. Dat maakte me nieuwsgierig naar softwareontwikkeling.
+            Nu mag ik bij het bedrijf van de vriendin van mijn zus werken. Ik leer daar als junior webdeveloper.
+            Met de kennis die ik opdoe, word ik beter in softwareontwikkeling.
+            Ik denk dat deze opleiding mij helpt om een goede softwareontwikkelaar te worden.
+            Ik wil graag nieuwe dingen leren en helpen met slimme ideeën in de digitale wereld.
+            Daarom wil ik blijven groeien en mijn carrière in softwareontwikkeling voortzetten.
+
+
+
+        </p>
+        <h2>Hobby's</h2>
+        <p>
+            Ik kijk graag naar films en series. Het is leuk om nieuwe verhalen te ontdekken en te ontspannen. Ook vind
+            ik het leuk om te reizen. Het is spannend om nieuwe plaatsen te verkennen en verschillende culturen te
+            ervaren. En ik ben dol op katten! Ze zijn schattig en gezellig. Het is fijn om met ze te spelen en ze te
+            knuffelen.
+
+
+        </p>
+        <h2>Vakken van Vorige School</h2>
+        <table>
+            <tr>
+                <th>Vak</th>
+                <th>Cijfer</th>
+            </tr>
+            <tr>
+                <td>Maatschapijleer</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>Wiskunde</td>
+                <td>7.4</td>
+            </tr>
+            <tr>
+                <td>Engels</td>
+                <td>7,2</td>
+            </tr>
+            <tr>
+                <td>econimie </td>
+                <td>7,1</td>
+            </tr>
+        </table>
+        <h2>Specificaties PC/Laptop</h2>
+        <img src="img/acer 2024.png" alt="">
+        <ul>
+            <li><strong>CPU-informatie:</strong> i7-1355U</li>
+            <li><strong>GPU-informatie:</strong> NVIDIA GeForce MX350</li>
+            <li><strong>Werkgeheugen (RAM):</strong> 8 GB</li>
+            <li><strong>Opslag:</strong> 1024 GB SSD </li>
+        </ul>
+        <h2>Verwachtingen van de Opleiding</h2>
+        <p>
+            Ik denk dat de opleiding Software Developer me zal helpen om meer te leren over computers en hoe ze werken.
+            Ik hoop te leren hoe ik zelf programma's kan maken en hoe ik websites kan bouwen. Ook kijk ik ernaar uit om
+            nieuwe vrienden te maken in mijn klas en samen aan projecten te werken. Ik denk dat de leraren me goed
+            zullen ondersteunen en me zullen helpen als ik iets niet begrijp. Ik wil graag veel leren tijdens deze
+            opleiding, zodat ik een goede softwareontwikkelaar kan worden en mijn dromen kan waarmaken.
+
+
+        </p>
+        <h2>Na de Opleiding</h2>
+        <p>
+            Na mijn opleiding Software Developer wil ik mijn vaardigheden verder ontwikkelen door aan uitdagende
+            projecten te werken en nieuwe technologieën te verkennen. Ik ben van plan om als softwareontwikkelaar aan de
+            slag te gaan bij een innovatief bedrijf, mijn eigen onderneming te starten of mijn studie voort te zetten.
+            Kortom, ik ben vastbesloten om mijn passie voor technologie te blijven volgen en mijn carrière in de
+            softwareontwikkeling voort te zetten.
+        </p>
+        <h2>Contactgegevens</h2>
+        <p>
+            Naam: Amina Ozodjeva <br>
+            Telefoonnummer: 112 <br>
+            E-mail: --
+        </p>
+    </div>
+</body>
+
+</html>
