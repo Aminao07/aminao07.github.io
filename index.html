@@ -1,294 +1,147 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Amina Ozdojeva</title>
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-
+    <title>Amina | Interactive Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
-
 <body>
-    <!-- Navigatie -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="img/AminaOzdojeva.logo.webp" alt="Logo" width="120">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">Over mij</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projecten</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about-site">over website</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <header class="site-header" id="top">
+        <nav class="navbar container">
+            <a class="logo" href="#top">Amina<span>.</span></a>
+            <button class="menu-toggle" aria-expanded="false" aria-controls="main-menu">☰</button>
+            <ul class="nav-links" id="main-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
 
-    <!-- Hero sectie -->
-    <section id="home" class="text-white text-center position-relative">
-        <img src="img/uitzichthomepage.jpg" alt="Homepage Uitzicht" class="img-fluid w-100"
-            style="height: 90vh; object-fit: cover;">
-        <div class="position-absolute top-50 start-50 translate-middle bg-dark bg-opacity-50 p-4 rounded">
-            <h1>Welkom op de Portfolio van Amina Ozdojeva</h1>
-            <p>Laat je inspireren door mijn werk en creativiteit</p>
-        </div>
-    </section>
-
-    <!-- Over mij -->
-    <section id="about" class="py-5 bg-light">
-        <div class="container ">
-            <div class="row align-items-center bg-danger text-white p-3">
-                <div class="col-lg-7 ">
-                    <h2>Wie ben ik?</h2>
-                    <p>
-                        Ik ben Amina Ozdojeva, een 17-jarige enthousiaste softwareontwikkelaar met een passie voor
-                        creativiteit en technologie.
-                        Momenteel studeer ik softwareontwikkeling en werk ik aan projecten waarin ik mijn kennis over
-                        front-end en back-end ontwikkeling combineer.
-                        Ik hou ervan om innovatieve oplossingen te creëren. Naast programmeren ben ik ook geïnteresseerd
-                        in series kijken en rennen.
-                    </p>
-                </div>
-                <div class="col-lg-5 text-center">
-                    <img src="img/amina.JPG" alt="Amina" class="rounded-circle"
-                        style="width: 300px; height: 300px; object-fit: cover;">
+        <section class="hero container">
+            <div class="hero-copy">
+                <p class="eyebrow">Software Development Student</p>
+                <h1>Neat, colorful, and interactive portfolio in red style.</h1>
+                <p>I build websites and games while always learning more. This portfolio shows my skills, projects, and growth mindset.</p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-solid">See projects</a>
+                    <a href="#contact" class="btn btn-outline">Contact me</a>
                 </div>
             </div>
+            <div class="hero-card" aria-hidden="true">
+                <span class="dot dot-1"></span>
+                <span class="dot dot-2"></span>
+                <span class="dot dot-3"></span>
+                <h2>Always improving</h2>
+                <p>♾️ Learning never stops</p>
+            </div>
+        </section>
+    </header>
 
-            <!-- Ervaring -->
-            <div class="mt-5">
-                <h3>Ervaring</h3>
-                <div class="row text-center ">
-                    <div class="col-md-4">
-                        <img src="img/Kruidvat.logo.png" alt="Kruitvat" class="img-fluid mb-2"
-                            style="max-height: 80px;">
-                        <p><b>Vulploeg - Kruitvat</b><br> Den Haag (05-08-2023 – 28-10-2023)</p>
-                    </div>
-                    <div class="col-md-4 bg-danger text-white p-3">
-                        <img src="img/bubbles-and-beand.logo.png" alt="Bubbles" class="img-fluid mb-2"
-                            style="max-height: 80px;">
-                        <p><b>Horeca - Bubbles and Beans</b><br> Den Haag (18-09-2023 – 30-11-2024)</p>
-                    </div>
-                    <div class="col-md-4">
-                        <img src="img/anderendoenhet.logo.png" alt="Anderen" class="img-fluid mb-2"
-                            style="max-height: 80px;">
-                        <p><b>Webdesign - Anderen doen het</b><br> Ypenburg (01-12-2024 – Heden)</p>
-                    </div>
+    <main>
+        <section id="about" class="section container">
+            <div class="section-title">
+                <h2>About me</h2>
+                <p>Understandable, clean, and made to clearly show who I am and what I can build.</p>
+            </div>
+            <div class="about-grid">
+                <article class="panel">
+                    <h3>Who I am</h3>
+                    <p>Hi, I'm Amina. I enjoy front-end and back-end development, creating clear user experiences, and building projects that are both useful and fun.</p>
+                </article>
+                <article class="panel">
+                    <h3>My focus</h3>
+                    <p>I care about clean UI, responsive layout, and interactive elements that make websites feel alive while staying easy to use.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="skills" class="section section-dark">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Skill bars</h2>
+                    <p>Interactive progress bars showing my current level and mindset.</p>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill" data-level="90"><div class="skill-head"><span>HTML</span><span>90%</span></div><div class="track"><span></span></div></div>
+                    <div class="skill" data-level="90"><div class="skill-head"><span>CSS</span><span>90%</span></div><div class="track"><span></span></div></div>
+                    <div class="skill" data-level="70"><div class="skill-head"><span>JavaScript</span><span>70%</span></div><div class="track"><span></span></div></div>
+                    <div class="skill" data-level="70"><div class="skill-head"><span>PHP</span><span>70%</span></div><div class="track"><span></span></div></div>
+                    <div class="skill" data-level="70"><div class="skill-head"><span>Symfony</span><span>70%</span></div><div class="track"><span></span></div></div>
+                    <div class="skill" data-level="60"><div class="skill-head"><span>Next.js</span><span>60%</span></div><div class="track"><span></span></div></div>
+                    <div class="skill" data-level="70"><div class="skill-head"><span>Bootstrap</span><span>70%</span></div><div class="track"><span></span></div></div>
+                    <div class="skill" data-level="60"><div class="skill-head"><span>Tailwind</span><span>60%</span></div><div class="track"><span></span></div></div>
+                    <div class="skill" data-level="75"><div class="skill-head"><span>Scrum</span><span>75%</span></div><div class="track"><span></span></div></div>
+                    <div class="skill special" data-level="100"><div class="skill-head"><span>🧠 Learn more</span><span>Always active</span></div><div class="track"><span></span></div></div>
+                    <div class="skill special" data-level="100"><div class="skill-head"><span>♾️ Infinite growth</span><span>No limit</span></div><div class="track"><span></span></div></div>
                 </div>
             </div>
+        </section>
 
-            <!-- Opleidingen -->
-            <div class="mt-5">
-                <h3>Opleiding</h3>
-                <div class="row text-center ">
-                    <div class="col-md-4 bg-danger text-white p-3">
-                        <img src="img/grote-beer.logo.png" alt="Grote Beer" class="img-fluid mb-2"
-                            style="max-height: 80px;">
-                        <p><b>Basisschool:</b> 2011–2020</p>
-                    </div>
-                    <div class="col-md-4 ">
-                        <img src="img/vatel.logo.png" alt="Vatel" class="img-fluid mb-2" style="max-height: 80px;">
-                        <p><b>Middelbare school:</b> 2020–2024</p>
-                    </div>
-                    <div class="col-md-4 bg-danger text-white p-3">
-                        <img src="img/Roc-Mondriaan.jpg" alt="ROC" class="img-fluid mb-2" style="max-height: 80px;">
-                        <p><b>MBO:</b> 2024–heden</p>
-                    </div>
-                </div>
+        <section id="projects" class="section container">
+            <div class="section-title">
+                <h2>Projects</h2>
+                <p>Each card has 2 buttons: one to details page and one to GitHub.</p>
             </div>
-        </div>
-    </section>
-
-    <!-- Projecten -->
-    <section id="projects" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-5">Projecten</h2>
-            <div class="row g-4">
-                <!-- Project 1 -->
-                <div class="col-md-4">
-                    <div class="card h-100 shadow bg-danger text-white p-3">
-                        <img src="img/pagina.png" class="card-img-top" alt="Voorpagina">
-                        <div class="card-body">
-                            <h5 class="card-title">Mijn eerste project</h5>
-                            <p class="card-text">Mijn eerste project was een portfolio voor de intake. Ik leerde over
-                                sitemaps, wireframes en coderen.</p>
-                            <a href="project-1/project.html" class="btn btn-primary">Bekijk Project</a>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <img src="img/pagina.png" alt="First project preview">
+                    <div class="project-body">
+                        <h3>My First Project</h3>
+                        <p>My first portfolio work where I learned structure, planning, and building with HTML/CSS.</p>
+                        <div class="project-actions">
+                            <a class="btn btn-solid" href="project-details/project-1.html">Project page</a>
+                            <a class="btn btn-outline" href="#" target="_blank" rel="noopener">GitHub</a>
                         </div>
                     </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="col-md-4 ">
-                    <div class="card h-100 shadow bg-danger text-white p-3">
-                        <img src="img/Higher-or-Lower-.png" class="card-img-top" alt="Higher or Lower">
-                        <div class="card-body">
-                            <h5 class="card-title">Hoger of Lager</h5>
-                            <p class="card-text">Een spel waarbij je moet raden of het volgende getal hoger of lager zal
-                                zijn dan het huidige getal.</p>
-                            <a href="project-2/index.html" class="btn btn-primary" target="_blank">Bekijk Project</a>
+                </article>
+                <article class="project-card">
+                    <img src="img/Higher-or-Lower-.png" alt="Higher or Lower game preview">
+                    <div class="project-body">
+                        <h3>Higher or Lower</h3>
+                        <p>A number guessing game focused on logic and interaction with JavaScript.</p>
+                        <div class="project-actions">
+                            <a class="btn btn-solid" href="project-details/project-2.html">Project page</a>
+                            <a class="btn btn-outline" href="#" target="_blank" rel="noopener">GitHub</a>
                         </div>
                     </div>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="col-md-4">
-                    <div class="card h-100 shadow bg-danger text-white p-3">
-                        <img src="img/connect-4-boeard.jpg" class="card-img-top" alt="Connect 4">
-                        <div class="card-body">
-                            <h5 class="card-title">Build your own game: Connect 4</h5>
-                            <p class="card-text">Samen met mijn team maakte ik een versie van het bekende spel Connect
-                                4. Een leuke en leerzame ervaring!</p>
-                            <a href="project3/Start-pagina/index.html" class="btn btn-primary" target="_blank">Bekijk
-                                Project</a>
+                </article>
+                <article class="project-card">
+                    <img src="img/connect-4-boeard.jpg" alt="Connect 4 game preview">
+                    <div class="project-body">
+                        <h3>Connect 4 Team Project</h3>
+                        <p>A team-built game project combining layout, logic, and collaboration.</p>
+                        <div class="project-actions">
+                            <a class="btn btn-solid" href="project-details/project-3.html">Project page</a>
+                            <a class="btn btn-outline" href="#" target="_blank" rel="noopener">GitHub</a>
                         </div>
                     </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="section section-dark">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Contact</h2>
+                    <p>Let’s connect and build something cool.</p>
+                </div>
+                <div class="contact-actions">
+                    <a class="btn btn-solid" href="#" target="_blank" rel="noopener">GitHub</a>
+                    <a class="btn btn-outline" href="mailto:302784377@student.rocmondriaan.nl">Email</a>
+                    <a class="btn btn-outline" href="#" target="_blank" rel="noopener">CV (placement)</a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <section id="about-site" class="py-5">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="text-center mb-5">Over deze website</h2>
-                <p class="lead text-secondary">Ontdek het verhaal achter deze portfolio</p>
-            </div>
-
-            <!-- Introductie Card -->
-            <div class="d-flex justify-content-center mb-4">
-                <div class="card bg-danger text-white border-0 shadow p-3 w-100" style="max-width: 800px;">
-                    <div class="row align-items-center">
-                        <h4 class="text-dark text-center">Waarom?</h4>
-                        <p class="text-center">
-                            Deze website heb ik gemaakt om mezelf voor te stellen. Hier laat ik zien wat ik kan, welke
-                            projecten ik heb gemaakt en hoe je contact met mij kunt opnemen. Het is mijn online
-                            portfolio
-                            zodat mensen mij beter kunnen leren kennen en zien waar ik goed in ben.
-                        </p>
-
-                    </div>
-                </div>
-            </div>
-
-            <!-- Technologieën -->
-            <div class="d-flex justify-content-center mb-4">
-                <div class="card bg-danger text-white border-0 shadow p-3 w-100" style="max-width: 800px;">
-                    <div class="row align-items-center">
-                        <div class="col-md-6">
-                            <h4 class="text-dark">Gebruikte technologieën</h4>
-                            <ul class="list-unstyled ms-3 mt-3">
-                                <li>HTML &amp; Bootstrap 5 - Structuur van de pagina</li>
-                                <li>Bootstrap 5 - Responsief ontwerp</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Kleuren -->
-            <div class="d-flex justify-content-center mb-4">
-                <div class="card bg-danger text-white border-0 shadow p-3 w-100" style="max-width: 800px;">
-                    <div class="row align-items-center">
-                        <div class="col-md-6">
-                            <h4 class="text-dark">Kleuren</h4>
-                            <p>Dit zijn de kleuren die ik heb gebruikt:</p>
-                        </div>
-                        <div class="col-md-6 text-center">
-                            <img src="img/kleurschema.png" class="img-fluid rounded border"
-                                alt="Kleurenpalet van de website">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Schets -->
-            <div class="d-flex justify-content-center mb-4">
-                <div class="card bg-danger text-white border-0 shadow p-3 w-100" style="max-width: 800px;">
-                    <div class="row align-items-center">
-                        <div class="col-md-6">
-                            <h4 class="text-dark">Schets van de website</h4>
-                            <p>Dit is de schets die ik heb gemaakt tijdens de ontwerpfase:</p>
-                        </div>
-                        <div class="col-md-6 text-center">
-                            
-                                <img src="img/1.png" class="img-fluid rounded border" style="max-width: 300px;"
-                                alt="Schets van de website">
-                                <img src="img/2.png" class="img-fluid rounded border" style="max-width: 300px;"
-                                alt="Schets van de website">
-                                <img src="img/3.png" class="img-fluid rounded border" style="max-width: 300px;"
-                                alt="Schets van de website">
-                                <img src="img/4.png" class="img-fluid rounded border" style="max-width: 300px;"
-                                alt="Schets van de website">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Sitemap -->
-            <div class="d-flex justify-content-center mb-4">
-                <div class="card bg-danger text-white border-0 shadow p-3 w-100" style="max-width: 800px;">
-                    <div class="row align-items-center">
-                        <div class="col-md-6">
-                            <h4 class="text-dark">Sitemap</h4>
-                            <p>Hieronder zie je de sitemap van mijn website:</p>
-                        </div>
-                        <div class="col-md-6 text-center">
-                            <img src="img/sitemap.png" class="img-fluid rounded border" style="max-width: 300px;"
-                                alt="Sitemap van de website">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-    <!-- Contact -->
-    <section id="contact" class="py-5 bg-light">
-        <div class="container bg-danger text-white">
-            <h2 class="text-center mb-4">Contact</h2>
-            <form action="mailto:amina@example.com" method="POST" enctype="text/plain" class="mx-auto"
-                style="max-width: 600px;">
-                <div class="mb-3">
-                    <label for="name" class="form-label">Naam</label>
-                    <input type="text" class="form-control" id="name" name="name" required>
-                </div>
-
-                <div class="mb-3">
-                    <label for="email" class="form-label">E-mail</label>
-                    <input type="email" class="form-control" id="email" name="email" required>
-                </div>
-
-                <div class="mb-3">
-                    <label for="message" class="form-label">Bericht</label>
-                    <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
-                </div>
-
-                <button type="submit" class="btn btn-primary">Verzenden</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="text-center py-3 bg-dark text-white">
-        Amina Ozdojeva &copy; 2025
-    </footer>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
