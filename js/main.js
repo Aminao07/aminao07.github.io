@@ -1,12 +1,36 @@
-const menuButton = document.querySelector('.menu-toggle');
-const menu = document.querySelector('.nav-links');
+const mount = document.querySelector('#site-header');
 
-if (menuButton && menu) {
-    menuButton.addEventListener('click', () => {
-        const isOpen = menu.classList.toggle('open');
-        menuButton.setAttribute('aria-expanded', String(isOpen));
-    });
-}
+const setupMenuToggle = () => {
+    const menuButton = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.nav-links');
+
+    if (menuButton && menu) {
+        menuButton.addEventListener('click', () => {
+            const isOpen = menu.classList.toggle('open');
+            menuButton.setAttribute('aria-expanded', String(isOpen));
+        });
+    }
+};
+
+const loadSharedHeader = async () => {
+    if (!mount) {
+        setupMenuToggle();
+        return;
+    }
+
+    const base = mount.dataset.base || '';
+    const src = mount.dataset.headerSrc || 'components/site-header.html';
+
+    try {
+        const response = await fetch(src);
+        const html = await response.text();
+        mount.innerHTML = html.replaceAll('{{base}}', base);
+    } catch {
+        mount.innerHTML = '<nav class="navbar container"><a class="logo" href="index.html#top">Amina<span>.</span></a></nav>';
+    }
+
+    setupMenuToggle();
+};
 
 const skillBars = document.querySelectorAll('.skill');
 const runBars = () => {
@@ -17,17 +41,19 @@ const runBars = () => {
     });
 };
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            runBars();
-            observer.disconnect();
-        }
-    });
-}, { threshold: 0.2 });
-
 const skillSection = document.querySelector('#skills');
-if (skillSection) observer.observe(skillSection);
+if (skillSection) {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                runBars();
+                observer.disconnect();
+            }
+        });
+    }, { threshold: 0.2 });
+
+    observer.observe(skillSection);
+}
 
 const hero = document.querySelector('.hero');
 const heroTrail = document.querySelector('.hero-trail');
@@ -41,3 +67,5 @@ if (hero && heroTrail) {
         heroTrail.style.setProperty('--y', `${y}px`);
     });
 }
+
+loadSharedHeader();
