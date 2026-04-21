@@ -1,294 +1,397 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Amina Ozdojeva</title>
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-
+    <title>Amina | Interactive Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
-
 <body>
-    <!-- Navigatie -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="img/AminaOzdojeva.logo.webp" alt="Logo" width="120">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">Over mij</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projecten</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about-site">over website</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
+    <header class="site-header" id="top">
+        <div class="site-header-shell">
+            <div id="site-header" data-base="" data-header-src="components/site-header.html"></div>
         </div>
-    </nav>
 
-    <!-- Hero sectie -->
-    <section id="home" class="text-white text-center position-relative">
-        <img src="img/uitzichthomepage.jpg" alt="Homepage Uitzicht" class="img-fluid w-100"
-            style="height: 90vh; object-fit: cover;">
-        <div class="position-absolute top-50 start-50 translate-middle bg-dark bg-opacity-50 p-4 rounded">
-            <h1>Welkom op de Portfolio van Amina Ozdojeva</h1>
-            <p>Laat je inspireren door mijn werk en creativiteit</p>
-        </div>
-    </section>
-
-    <!-- Over mij -->
-    <section id="about" class="py-5 bg-light">
-        <div class="container ">
-            <div class="row align-items-center bg-danger text-white p-3">
-                <div class="col-lg-7 ">
-                    <h2>Wie ben ik?</h2>
-                    <p>
-                        Ik ben Amina Ozdojeva, een 17-jarige enthousiaste softwareontwikkelaar met een passie voor
-                        creativiteit en technologie.
-                        Momenteel studeer ik softwareontwikkeling en werk ik aan projecten waarin ik mijn kennis over
-                        front-end en back-end ontwikkeling combineer.
-                        Ik hou ervan om innovatieve oplossingen te creëren. Naast programmeren ben ik ook geïnteresseerd
-                        in series kijken en rennen.
-                    </p>
-                </div>
-                <div class="col-lg-5 text-center">
-                    <img src="img/amina.JPG" alt="Amina" class="rounded-circle"
-                        style="width: 300px; height: 300px; object-fit: cover;">
+        <section class="hero container">
+            <div class="hero-trail" aria-hidden="true"></div>
+            <div class="hero-copy">
+                <p class="eyebrow">Software Development Student</p>
+                <h1>Code. Create. Improve.</h1>
+                <p>Code. Create. Improve.
+                    Deze website geeft een overzicht van mijn projecten, skills en mijn passie voor het bouwen van
+                    moderne webapplicaties. Hier laat ik zien hoe ik mij ontwikkel als software developer en werk aan
+                    gebruiksvriendelijke en sterke oplossingen.</p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-solid">See projects</a>
+                    <a href="#contact" class="btn btn-outline">Contact me</a>
                 </div>
             </div>
-
-            <!-- Ervaring -->
-            <div class="mt-5">
-                <h3>Ervaring</h3>
-                <div class="row text-center ">
-                    <div class="col-md-4">
-                        <img src="img/Kruidvat.logo.png" alt="Kruitvat" class="img-fluid mb-2"
-                            style="max-height: 80px;">
-                        <p><b>Vulploeg - Kruitvat</b><br> Den Haag (05-08-2023 – 28-10-2023)</p>
-                    </div>
-                    <div class="col-md-4 bg-danger text-white p-3">
-                        <img src="img/bubbles-and-beand.logo.png" alt="Bubbles" class="img-fluid mb-2"
-                            style="max-height: 80px;">
-                        <p><b>Horeca - Bubbles and Beans</b><br> Den Haag (18-09-2023 – 30-11-2024)</p>
-                    </div>
-                    <div class="col-md-4">
-                        <img src="img/anderendoenhet.logo.png" alt="Anderen" class="img-fluid mb-2"
-                            style="max-height: 80px;">
-                        <p><b>Webdesign - Anderen doen het</b><br> Ypenburg (01-12-2024 – Heden)</p>
-                    </div>
-                </div>
+            <div class="hero-card" aria-hidden="true">
+                <span class="dot dot-1"></span>
+                <span class="dot dot-2"></span>
+                <span class="dot dot-3"></span>
+                <h2>Always improving</h2>
+                <p>♾️ Learning never stops</p>
             </div>
+        </section>
+    </header>
 
-            <!-- Opleidingen -->
-            <div class="mt-5">
-                <h3>Opleiding</h3>
-                <div class="row text-center ">
-                    <div class="col-md-4 bg-danger text-white p-3">
-                        <img src="img/grote-beer.logo.png" alt="Grote Beer" class="img-fluid mb-2"
-                            style="max-height: 80px;">
-                        <p><b>Basisschool:</b> 2011–2020</p>
-                    </div>
-                    <div class="col-md-4 ">
-                        <img src="img/vatel.logo.png" alt="Vatel" class="img-fluid mb-2" style="max-height: 80px;">
-                        <p><b>Middelbare school:</b> 2020–2024</p>
-                    </div>
-                    <div class="col-md-4 bg-danger text-white p-3">
-                        <img src="img/Roc-Mondriaan.jpg" alt="ROC" class="img-fluid mb-2" style="max-height: 80px;">
-                        <p><b>MBO:</b> 2024–heden</p>
-                    </div>
-                </div>
+    <main>
+        <section id="about" class="section container">
+            <div class="section-title">
+                <h2>About me</h2>
             </div>
-        </div>
-    </section>
+            <div class="about-grid">
+                <article class="panel">
+                    <h3>Who I am</h3>
+                    <p>Ik ben Amina Ozdojeva, 18 jaar en tweedejaars software developer. Ik ontwikkel graag creatieve en
+                        technische projecten en werk continu aan het verbeteren van mijn programmeervaardigheden.</p>
+                </article>
+                <article class="panel">
+                    <h3>My focus</h3>
+                    <p>Mijn focus ligt op het blijven groeien, nieuwe technologieën leren en mezelf onderscheiden binnen
+                        de IT-wereld.</p>
+                </article>
+            </div>
+        </section>
 
-    <!-- Projecten -->
-    <section id="projects" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-5">Projecten</h2>
-            <div class="row g-4">
-                <!-- Project 1 -->
-                <div class="col-md-4">
-                    <div class="card h-100 shadow bg-danger text-white p-3">
-                        <img src="img/pagina.png" class="card-img-top" alt="Voorpagina">
-                        <div class="card-body">
-                            <h5 class="card-title">Mijn eerste project</h5>
-                            <p class="card-text">Mijn eerste project was een portfolio voor de intake. Ik leerde over
-                                sitemaps, wireframes en coderen.</p>
-                            <a href="project-1/project.html" class="btn btn-primary">Bekijk Project</a>
+        <section id="skills" class="section section-dark">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Skill bars</h2>
+                    <p>Interactive progress bars grouped by category to make strengths easier to understand.</p>
+                </div>
+                <div class="skill-categories">
+                    <article class="skill-category">
+                        <h3>Coding</h3>
+                        <div class="skills-grid">
+                            <div class="skill" data-level="90">
+                                <div class="skill-head"><span>HTML</span><span>90%</span></div>
+                                <div class="track"><span></span></div>
+                            </div>
+                            <div class="skill" data-level="90">
+                                <div class="skill-head"><span>CSS</span><span>90%</span></div>
+                                <div class="track"><span></span></div>
+                            </div>
+                            <div class="skill" data-level="70">
+                                <div class="skill-head"><span>JavaScript</span><span>70%</span></div>
+                                <div class="track"><span></span></div>
+                            </div>
+                            <div class="skill" data-level="70">
+                                <div class="skill-head"><span>PHP</span><span>70%</span></div>
+                                <div class="track"><span></span></div>
+                            </div>
                         </div>
-                    </div>
-                </div>
+                    </article>
 
-                <!-- Project 2 -->
-                <div class="col-md-4 ">
-                    <div class="card h-100 shadow bg-danger text-white p-3">
-                        <img src="img/Higher-or-Lower-.png" class="card-img-top" alt="Higher or Lower">
-                        <div class="card-body">
-                            <h5 class="card-title">Hoger of Lager</h5>
-                            <p class="card-text">Een spel waarbij je moet raden of het volgende getal hoger of lager zal
-                                zijn dan het huidige getal.</p>
-                            <a href="project-2/index.html" class="btn btn-primary" target="_blank">Bekijk Project</a>
+                    <article class="skill-category">
+                        <h3>Frameworks</h3>
+                        <div class="skills-grid">
+                            <div class="skill" data-level="70">
+                                <div class="skill-head"><span>Symfony</span><span>70%</span></div>
+                                <div class="track"><span></span></div>
+                            </div>
+                            <div class="skill" data-level="60">
+                                <div class="skill-head"><span>Next.js</span><span>60%</span></div>
+                                <div class="track"><span></span></div>
+                            </div>
+                            <div class="skill" data-level="70">
+                                <div class="skill-head"><span>Bootstrap</span><span>70%</span></div>
+                                <div class="track"><span></span></div>
+                            </div>
+                            <div class="skill" data-level="60">
+                                <div class="skill-head"><span>Tailwind</span><span>60%</span></div>
+                                <div class="track"><span></span></div>
+                            </div>
+                            <div class="skill" data-level="50">
+                                <div class="skill-head"><span>Phaser</span><span>50%</span></div>
+                                <div class="track"><span></span></div>
+                            </div>
                         </div>
-                    </div>
-                </div>
+                    </article>
 
-                <!-- Project 3 -->
-                <div class="col-md-4">
-                    <div class="card h-100 shadow bg-danger text-white p-3">
-                        <img src="img/connect-4-boeard.jpg" class="card-img-top" alt="Connect 4">
-                        <div class="card-body">
-                            <h5 class="card-title">Build your own game: Connect 4</h5>
-                            <p class="card-text">Samen met mijn team maakte ik een versie van het bekende spel Connect
-                                4. Een leuke en leerzame ervaring!</p>
-                            <a href="project3/Start-pagina/index.html" class="btn btn-primary" target="_blank">Bekijk
-                                Project</a>
-                        </div>
+                    <div class="stacked-categories">
+                        <article class="skill-category">
+                            <h3>Database, Version Control & Workflow</h3>
+                            <div class="skills-grid">
+                                <div class="skill" data-level="60">
+                                    <div class="skill-head"><span>SQL / MySQL</span><span>60%</span></div>
+                                    <div class="track"><span></span></div>
+                                </div>
+                                <div class="skill" data-level="60">
+                                    <div class="skill-head"><span>Git</span><span>60%</span></div>
+                                    <div class="track"><span></span></div>
+                                </div>
+                                <div class="skill" data-level="75">
+                                    <div class="skill-head"><span>Scrum</span><span>75%</span></div>
+                                    <div class="track"><span></span></div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="stacked-categories">
+
+                        <article class="skill-category">
+                            <h3>Tools I use</h3>
+                            <ul class="tool-list">
+                                <li>GitHub</li>
+                                <li>VS Code</li>
+                                <li>PhpStorm</li>
+                                <li>phpMyAdmin</li>
+                            </ul>
+                        </article>
+                        <article class="skill-category">
+                            <h3>Mindset</h3>
+                            <div class="skills-grid">
+                                <div class="skill special" data-level="100">
+                                    <div class="skill-head"><span>Learn more</span><span>Always active</span></div>
+                                    <div class="track"><span></span></div>
+                                </div>
+                                <div class="skill special" data-level="100">
+                                    <div class="skill-head"><span>♾️ Infinite growth</span><span>No limit</span></div>
+                                    <div class="track"><span></span></div>
+                                </div>
+                            </div>
+                        </article>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="about-site" class="py-5">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="text-center mb-5">Over deze website</h2>
-                <p class="lead text-secondary">Ontdek het verhaal achter deze portfolio</p>
+        <section id="projects" class="section container">
+            <div class="section-title">
+                <h2>Projects</h2>
+                <p>Projecten waar ik over de jaren aan heb gewerk!</p>
             </div>
-
-            <!-- Introductie Card -->
-            <div class="d-flex justify-content-center mb-4">
-                <div class="card bg-danger text-white border-0 shadow p-3 w-100" style="max-width: 800px;">
-                    <div class="row align-items-center">
-                        <h4 class="text-dark text-center">Waarom?</h4>
-                        <p class="text-center">
-                            Deze website heb ik gemaakt om mezelf voor te stellen. Hier laat ik zien wat ik kan, welke
-                            projecten ik heb gemaakt en hoe je contact met mij kunt opnemen. Het is mijn online
-                            portfolio
-                            zodat mensen mij beter kunnen leren kennen en zien waar ik goed in ben.
-                        </p>
-
-                    </div>
-                </div>
-            </div>
-
-            <!-- Technologieën -->
-            <div class="d-flex justify-content-center mb-4">
-                <div class="card bg-danger text-white border-0 shadow p-3 w-100" style="max-width: 800px;">
-                    <div class="row align-items-center">
-                        <div class="col-md-6">
-                            <h4 class="text-dark">Gebruikte technologieën</h4>
-                            <ul class="list-unstyled ms-3 mt-3">
-                                <li>HTML &amp; Bootstrap 5 - Structuur van de pagina</li>
-                                <li>Bootstrap 5 - Responsief ontwerp</li>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <span class="period-badge">Periode 7</span>
+                    <img src="img/QUIZ-HBO-IMG.png" alt="project preview">
+                    <div class="project-body">
+                        <h3>HBO Quiz</h3>
+                        <p>Een interactieve quiz voor studenten om te ontdekken welke ICT-richting het beste bij hen
+                            past. Op basis van hun antwoorden krijgen gebruikers een advies over passende
+                            studierichtingen binnen ICT</p>
+                        <div class="project-meta">
+                            <h4>Skills used</h4>
+                            <ul class="chip-list">
+                                <li>HTML/CSS</li>
+                                <li>JavaScript</li>
+                                <li>VsCode</li>
+                                <li>Teamwork</li>
                             </ul>
                         </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Kleuren -->
-            <div class="d-flex justify-content-center mb-4">
-                <div class="card bg-danger text-white border-0 shadow p-3 w-100" style="max-width: 800px;">
-                    <div class="row align-items-center">
-                        <div class="col-md-6">
-                            <h4 class="text-dark">Kleuren</h4>
-                            <p>Dit zijn de kleuren die ik heb gebruikt:</p>
-                        </div>
-                        <div class="col-md-6 text-center">
-                            <img src="img/kleurschema.png" class="img-fluid rounded border"
-                                alt="Kleurenpalet van de website">
+                        <div class="project-actions">
+                            <a class="btn btn-solid" href="Hbo-quiz/index.html">Bekijk Project</a>
+                            <a class="btn btn-outline" href="https://github.com/Aminao07/HBO-quiz" target="_blank"
+                                rel="noopener">GitHub</a>
                         </div>
                     </div>
-                </div>
-            </div>
+                </article>
+                <article class="project-card">
+                    <span class="period-badge">Period 7</span>
+                    <img src="img/Bibliotheek-Systeem-IMG.png" alt="project preview">
+                    <div class="project-body">
+                        <h3>Bibliotheek Systeem</h3>
+                        <p>Een eenvoudig en efficiënt bibliotheeksysteem dat gebruikers inzicht geeft in belangrijke
+                            informatie, zoals beschikbare boeken, uitgeleende boeken.</p>
+                        <div class="project-meta">
+                            <h4>Skills used</h4>
+                            <ul class="chip-list">
+                                <li>HTML/CSS</li>
+                                <li>Symfony</li>
+                                <li>MySQL</li>
+                                <li>PhpStorm</li>
+                                <li>Teamwork</li>
+                            </ul>
+                        </div>
+                        <div class="project-actions">
+                            <a class="btn btn-solid" href="https://github.com/Aminao07/Dashboard-SDG">GitHub</a>
 
-            <!-- Schets -->
-            <div class="d-flex justify-content-center mb-4">
-                <div class="card bg-danger text-white border-0 shadow p-3 w-100" style="max-width: 800px;">
-                    <div class="row align-items-center">
-                        <div class="col-md-6">
-                            <h4 class="text-dark">Schets van de website</h4>
-                            <p>Dit is de schets die ik heb gemaakt tijdens de ontwerpfase:</p>
-                        </div>
-                        <div class="col-md-6 text-center">
-                            
-                                <img src="img/1.png" class="img-fluid rounded border" style="max-width: 300px;"
-                                alt="Schets van de website">
-                                <img src="img/2.png" class="img-fluid rounded border" style="max-width: 300px;"
-                                alt="Schets van de website">
-                                <img src="img/3.png" class="img-fluid rounded border" style="max-width: 300px;"
-                                alt="Schets van de website">
-                                <img src="img/4.png" class="img-fluid rounded border" style="max-width: 300px;"
-                                alt="Schets van de website">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Sitemap -->
-            <div class="d-flex justify-content-center mb-4">
-                <div class="card bg-danger text-white border-0 shadow p-3 w-100" style="max-width: 800px;">
-                    <div class="row align-items-center">
-                        <div class="col-md-6">
-                            <h4 class="text-dark">Sitemap</h4>
-                            <p>Hieronder zie je de sitemap van mijn website:</p>
-                        </div>
-                        <div class="col-md-6 text-center">
-                            <img src="img/sitemap.png" class="img-fluid rounded border" style="max-width: 300px;"
-                                alt="Sitemap van de website">
                         </div>
                     </div>
+                </article>
+                <article class="project-card">
+                    <span class="period-badge">Period 6</span>
+                    <img src="img/Dashboard-IMG.png" alt="project preview">
+                    <div class="project-body">
+                        <h3>SDG Dashboard</h3>
+                        <p>Een overzichtelijk dashboard dat belangrijke gegevens en statistieken over landen op één plek
+                            weergeeft, zodat gebruikers snel inzicht krijgen in informatie zoals bevolking, economie en
+                            locatie.</p>
+                        <div class="project-meta">
+                            <h4>Skills used</h4>
+                            <ul class="chip-list">
+                                <li>HTML/CSS</li>
+                                <li>Next.js</li>
+                                <li>MySQL</li>
+                                <li>VsCode</li>
+                                <li>Teamwork</li>
+
+                            </ul>
+                        </div>
+                        <div class="project-actions">
+                            <a class="btn btn-solid" href="https://github.com/Aminao07/Dashboard-SDG">GitHub</a>
+
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <span class="period-badge">Period 5</span>
+                    <img src="img/Budget-Buddy-IMG.png" alt="Project preview">
+                    <div class="project-body">
+                        <h3>Budget Buddy</h3>
+                        <p>Een gebruiksvriendelijke applicatie waarmee gebruikers hun inkomsten en uitgaven kunnen
+                            bijhouden, zodat ze beter inzicht krijgen in hun financiën en hun budget effectief kunnen
+                            beheren.</p>
+                        <div class="project-meta">
+                            <h4>Skills used</h4>
+                            <ul class="chip-list">
+                                <li>HTML/CSS</li>
+                                <li>Symfony</li>
+                                <li>MySQL</li>
+                                <li>PhpStorm</li>
+                                <li>Teamwork</li>
+
+                            </ul>
+                        </div>
+                        <div class="project-actions"><a class="btn btn-solid"
+                                href="https://github.com/Aminao07/Budget-Buddy">GitHub</a>
+                        </div>
+                </article>
+                <article class="project-card">
+                    <span class="period-badge">Period 4</span>
+                    <img src="img/Run-4-Your-Life-IMG.png" alt="Project previeuw">
+                    <div class="project-body">
+                        <h3>Run 4 Your Life</h3>
+                        <p>Een spannend spel waarin de speler moet ontsnappen aan gevaar door snel te reageren en
+                            obstakels te ontwijken, met als doel zo lang mogelijk te overleven.</p>
+                        <div class="project-meta">
+                            <h4>Skills used</h4>
+                            <ul class="chip-list">
+                                <li>JavaScript</li>
+                                <li>Phaser</li>
+                                <li>VsCode</li>
+                                <li>Game</li>
+                                <li>Teamwork</li>
+                            </ul>
+                        </div>
+                        <div class="project-actions"><a class="btn btn-solid" href="Run4yourlife/index.html">Bekijk
+                                Game</a><a class="btn btn-outline" href="https://github.com/Aminao07/Run-4-Your-Life"
+                                target="_blank" rel="noopener">GitHub</a></div>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <span class="period-badge">Period 3/4</span>
+                    <img src="img/Review-Your-Expiriance-IMG.png" alt="Project preview">
+                    <div class="project-body">
+                        <h3>Review Your Expiriance</h3>
+                        <p>Een platform waarop gebruikers hun ervaringen kunnen delen en beoordelen, zodat anderen beter
+                            geïnformeerde keuzes kunnen maken op basis van eerlijke reviews.</p>
+                        <div class="project-meta">
+                            <h4>Skills used</h4>
+                            <ul class="chip-list">
+                                <li>HTMl/CSS</li>
+                                <li>PHP</li>
+                                <li>MySQL</li>
+                                <li>PhpStorm</li>
+                                <li>Teamwork</li>
+                            </ul>
+                        </div>
+                        <div class="project-actions"><a class="btn btn-solid"
+                                href="https://github.com/Aminao07/Review-Your-Experience">GitHub</a>
+
+                        </div>
+                </article>
+                <article class="project-card">
+                    <span class="period-badge">Period 2</span>
+                    <img src="img/Connect-4-IMG.png" alt="Project ">
+                    <div class="project-body">
+                        <h3>Connect Four</h3>
+                        <p>Een klassiek strategiespel waarin spelers tegen elkaar of tegen een computer spelen door om
+                            de beurt schijven in een raster te laten vallen. Het doel is om als eerste vier op een rij
+                            te krijgen.</p>
+                        <div class="project-meta">
+                            <h4>Skills used</h4>
+                            <ul class="chip-list">
+                                <li>HTML/CSS</li>
+                                <li>JavaScript</li>
+                                <li>VsCode</li>
+                                <li>Game</li>
+                            </ul>
+                        </div>
+                        <div class="project-actions"><a class="btn btn-solid" href="Connect-4/hp.html">Bekijk Game</a><a
+                                class="btn btn-outline" href="https://github.com/Aminao07/Connect-Four" target="_blank"
+                                rel="noopener">GitHub</a></div>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <span class="period-badge">Period 1</span>
+                    <img src="img/Hoger-Lager-IMG.png" alt="Project preview">
+                    <div class="project-body">
+                        <h3>Hoger Lager</h3>
+                        <p>Een eenvoudig en spannend gokspel waarbij de speler moet raden of het volgende getal hoger of
+                            lager is dan het huidige, met als doel zo lang mogelijk goed te raden.</p>
+                        <div class="project-meta">
+                            <h4>Skills used</h4>
+                            <ul class="chip-list">
+                                <li>HTMl/CSS</li>
+                                <li>JavaScript</li>
+                                <li>VsCode</li>
+                                <li>Game</li>
+
+                            </ul>
+                        </div>
+                        <div class="project-actions"><a class="btn btn-solid" href="Hoger-Lager/index.html">Bekijk
+                                Game</a><a class="btn btn-outline" href="https://github.com/Aminao07/Hoger-lager"
+                                target="_blank" rel="noopener">GitHub</a></div>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <span class="period-badge">Period 0</span>
+                    <img src="img/intake-IMG.png" alt="Project preview">
+                    <div class="project-body">
+                        <h3>Intake Portofolio</h3>
+                        <p>Mijn intake portfolio die ik heb gemaakt op mijn 15e, toen ik net begon met software
+                            development.</p>
+                        <div class="project-meta">
+                            <h4>Skills used</h4>
+                            <ul class="chip-list">
+                                <li>HTML/CSS</li>
+                                <li>VsCode</li>
+                                <li>In learning process</li>
+                            </ul>
+                        </div>
+                        <div class="project-actions"><a class="btn btn-solid" href="Intake-Portofolio/index.html">Bekijk
+                                Portofolio</a>
+                        </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="section section-dark">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Contact</h2>
+                    <p>Let’s connect and build something cool.</p>
+                </div>
+                <div class="contact-actions">
+                    <a class="btn btn-solid" href="https://github.com/Aminao07" target="_blank" rel="noopener">GitHub</a>
+                    <a class="btn btn-outline" href="mailto:302784377@student.rocmondriaan.nl">Email</a>
+                    <a class="btn btn-outline" href="img/CV AMINA OZODJEVA INTERSHIP (1).pdf" target="_blank" rel="noopener">CV</a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-
-
-    <!-- Contact -->
-    <section id="contact" class="py-5 bg-light">
-        <div class="container bg-danger text-white">
-            <h2 class="text-center mb-4">Contact</h2>
-            <form action="mailto:amina@example.com" method="POST" enctype="text/plain" class="mx-auto"
-                style="max-width: 600px;">
-                <div class="mb-3">
-                    <label for="name" class="form-label">Naam</label>
-                    <input type="text" class="form-control" id="name" name="name" required>
-                </div>
-
-                <div class="mb-3">
-                    <label for="email" class="form-label">E-mail</label>
-                    <input type="email" class="form-control" id="email" name="email" required>
-                </div>
-
-                <div class="mb-3">
-                    <label for="message" class="form-label">Bericht</label>
-                    <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
-                </div>
-
-                <button type="submit" class="btn btn-primary">Verzenden</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="text-center py-3 bg-dark text-white">
-        Amina Ozdojeva &copy; 2025
-    </footer>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
