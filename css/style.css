@@ -315,4 +315,9 @@ body {
     .nav-links.open { display: flex; }
     .hero, .projects-grid { grid-template-columns: 1fr; }
     .navbar { border-radius: 18px; }
+    .project-body { text-align: center; }
+    .project-body p { min-height: 0; }
+    .chip-list { justify-content: center; }
+    .project-actions { justify-content: center; }
+    .project-actions .btn { min-width: 140px; }
 }
